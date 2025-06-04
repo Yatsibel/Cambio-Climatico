@@ -1,0 +1,113 @@
+/* Importación de tipografías */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5;
+  color: #212121;
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #2E7D32;
+}
+
+.navbar {
+  background-color: #1565C0;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 1.5em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: url('../img/hero.jpg') no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2em;
+}
+
+.intro {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2em;
+  border-radius: 1em;
+}
+
+.btn {
+  background-color: #2E7D32;
+  color: white;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 0.5em;
+  display: inline-block;
+  margin-top: 1em;
+}
+
+.btn:hover {
+  background-color: #1B5E20;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #E3F2FD;
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* --- ESTILOS RESPONSIVOS --- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5em;
+    width: 100%;
+    padding: 0;
+  }
+
+  .hero {
+    height: auto;
+    padding: 4em 1em;
+  }
+
+  .intro {
+    padding: 1.5em;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
